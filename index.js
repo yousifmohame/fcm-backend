@@ -1,6 +1,7 @@
 import express from "express";
 import admin from "firebase-admin";
-import serviceAccount from "./serviceAccountKey.json" assert { type: "json" };
+const serviceAccount = JSON.parse(process.env.SERVICE_ACCOUNT);
+
 
 const app = express();
 const port = process.env.PORT || 3000;
