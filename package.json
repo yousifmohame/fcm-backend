@@ -1,13 +1,20 @@
 {
   "name": "fcm-backend",
   "version": "1.0.0",
+  "description": "Backend server to send FCM notifications for Saadny app, deployable on Railway.",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "firebase-admin": "^11.10.1"
+    "express": "^4.19.2",
+    "body-parser": "^1.20.2",
+    "firebase-admin": "^12.1.0"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
